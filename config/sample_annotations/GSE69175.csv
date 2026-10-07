@@ -1,0 +1,5 @@
+sample_id,sample_name,condition,biological_unit,technical_replicate
+GSM1694663,control_rep1_RNA-seq,control,BJ-riPS,1
+GSM1694664,control_rep2_RNA-seq,control,BJ-riPS,2
+GSM1694665,smn_rep1_RNA-seq,disease,1-38G,1
+GSM1694666,smn_rep2_RNA-seq,disease,1-38G,2

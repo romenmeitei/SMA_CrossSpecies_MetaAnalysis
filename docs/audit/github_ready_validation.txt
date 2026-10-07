@@ -1,0 +1,7 @@
+severity accession           check                                                message
+    INFO  GSE69175 restricted_role              Dataset is restricted to sensitivity_only
+    INFO GSE208629 restricted_role             Dataset is restricted to localization_only
+    INFO GSE154106        excluded Ribosome profiling is not pooled with transcriptome DE
+    INFO  GSE38417        excluded            Duchenne muscular dystrophy rather than SMA
+
+Wrote /home/romen/SMA_Cross/github_ready/SMA_CrossSpecies_MetaAnalysis/data/audit/manifest_validation.csv

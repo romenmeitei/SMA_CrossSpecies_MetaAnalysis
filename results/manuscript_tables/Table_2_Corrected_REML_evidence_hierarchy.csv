@@ -1,0 +1,5 @@
+tier,definition,genes
+Tier 1,Corrected full neural REML meta-analysis FDR <= 0.05,731
+Tier 2,Tier 1 plus all-study direction agreement and I2 < 75%,370
+Tier 3,"Full-model significance, I2 < 75%, and significance after excluding GSE56284",9
+Tier 4,Tier 2 plus significant concordant results in both available cross-species leave-one-dataset-out analyses,1

@@ -1,0 +1,8 @@
+sample_id,condition,biological_unit
+GSM6407718,control,control_1
+GSM6407719,control,control_2
+GSM6407720,control,control_3
+GSM6407721,disease,SMA_1
+GSM6407722,disease,SMA_2
+GSM6407723,disease,SMA_3
+

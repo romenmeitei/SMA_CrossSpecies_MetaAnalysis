@@ -1,0 +1,5 @@
+accession,species,tissue,control_biological_units,disease_biological_units,tested_genes,FDR_le_0.05,analysis_role
+GSE108094,Homo sapiens,motor neuron,2,2,19551,383.0,eligible discovery
+GSE209926,Mus musculus,spinal cord,3,3,16254,15.0,eligible discovery
+GSE56284,Mus musculus,motor neuron,3,3,16884,11697.0,eligible discovery
+GSE69175,Homo sapiens,motor neuron,1,1,14062,,descriptive sensitivity only

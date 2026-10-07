@@ -1,0 +1,2 @@
+-e .[enrichment,notebook,test]
+

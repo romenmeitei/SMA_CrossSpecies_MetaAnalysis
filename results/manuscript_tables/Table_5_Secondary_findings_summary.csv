@@ -1,0 +1,5 @@
+finding,result,evidence_role
+GSE108094 skipped-exon events,"1,069 events in 844 genes",secondary
+Brain Development splicing ORA,20 genes; enrichment ratio 3.12; global FDR 0.0422,secondary
+UGP2 skipped-exon event,delta PSI -0.174; FDR 0.0298,secondary cross-modal
+AMPA receptor trafficking,Disease FDR < 0.05 and treatment reversal FDR < 0.10 in both models,exploratory secondary

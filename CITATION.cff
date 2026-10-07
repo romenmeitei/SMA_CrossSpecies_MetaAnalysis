@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software or its frozen analytical outputs, please cite
+  the associated manuscript and this software release.
+title: >-
+  SMA cross-species, tissue-aware and treatment-reversal meta-analysis
+type: software
+authors:
+  - family-names: Meitei
+    given-names: Lourembam Romen
+version: 1.0.0
+date-released: 2026-10-07
+license: MIT
+repository-code: https://github.com/romenmeitei/SMA_CrossSpecies_MetaAnalysis
+keywords:
+  - spinal muscular atrophy
+  - cross-species meta-analysis
+  - transcriptomics
+  - RNA-seq
+  - differential expression
+  - alternative splicing
+  - treatment reversal

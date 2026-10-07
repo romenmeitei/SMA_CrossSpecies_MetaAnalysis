@@ -1,0 +1,10 @@
+sample_id,condition,biological_unit,technical_replicate
+GSM2889458,control,control_MN1,1
+GSM2889459,control,control_MN1,2
+GSM2889460,control,control_MN2,1
+GSM2889461,control,control_MN2,2
+GSM2889462,disease,SMA_MN1,1
+GSM2889463,disease,SMA_MN1,2
+GSM2889464,disease,SMA_MN2,1
+GSM2889465,disease,SMA_MN2,2
+

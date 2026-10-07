@@ -1,0 +1,70 @@
+project:
+  title: "Cross-species, tissue-aware and treatment-reversal meta-analysis of SMA"
+  seed: 20260814
+  disease_label: disease
+  control_label: control
+  treated_label: treated
+
+eligibility:
+  forbidden_accessions: [GSE38417]
+  allowed_assays: [rna_seq, microarray, single_cell_rna_seq]
+  minimum_independent_units_per_group: 2
+  single_cell_minimum_independent_samples_per_group_for_de: 2
+  fail_on_unresolved_independence: false
+
+differential_expression:
+  fdr: 0.05
+  report_effect_threshold: 0.25
+  low_expression_min_cpm: 1.0
+  low_expression_min_samples: 2
+  microarray_log2_trigger_q99: 100.0
+  collapse_probes: highest_iqr
+  primary_contrast: disease-control
+
+orthology:
+  relationship: one_to_one_only
+  id_type: ensembl_gene_id
+  strip_ensembl_version: true
+  mapping_file: resources/ensembl_human_mouse_one_to_one.tsv
+  ensembl_release: 113
+
+meta_analysis:
+  primary_method: random_effects_reml
+  fallback_method: weighted_stouffer
+  minimum_studies: 2
+  minimum_species: 2
+  fdr: 0.05
+  heterogeneity_warning_i2: 75.0
+  strata: [motor_neuron, spinal_cord, skeletal_muscle]
+  neural_subtypes: [motor_neuron, spinal_cord]
+  leave_one_dataset_out: true
+  species_as_moderator: true
+  tissue_as_moderator: true
+
+treatment_reversal:
+  disease_contrast: disease-control
+  treatment_contrast: treated-disease
+  fdr_each_contrast: 0.10
+  minimum_absolute_z: 1.0
+  reversal_score: negative_z_product
+  sensitivity_model: mouse_level_pseudobulk
+
+splicing:
+  event_fdr: 0.05
+  minimum_absolute_delta_psi: 0.10
+  permitted_event_types: [SE, A5SS, A3SS, MXE, RI]
+
+enrichment:
+  method: preranked_gsea
+  ranking_metric: signed_meta_z
+  permutations: 1000
+  fdr: 0.05
+  gene_set_collections: [GO_Biological_Process, Reactome]
+
+network:
+  enabled_by_default: false
+  source: STRING_bulk_file
+  minimum_score: 700
+  degree_matched_permutations: 1000
+  prohibit_api_chunking: true
+

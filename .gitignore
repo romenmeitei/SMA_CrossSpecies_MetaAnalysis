@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+env/
+conda-env/
+.env
+
+# Notebooks and editors
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.before_*
+*~
+
+# Downloaded inputs
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/README.md
+
+# Generated bulk results
+results/*
+!results/README.md
+!results/manuscript_tables/
+!results/manuscript_tables/**
+
+# Archives
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Credentials
+*.pem
+*.key
+credentials*
+secrets*

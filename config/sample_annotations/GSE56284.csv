@@ -1,0 +1,7 @@
+sample_id,sample_name,condition,biological_unit
+GSM1358335,HB9_1,control,control_1
+GSM1358336,HB9_2,control,control_2
+GSM1358337,HB9_3,control,control_3
+GSM1358338,SMA-A2_1,disease,SMA_A2_1
+GSM1358339,SMA-A2_2,disease,SMA_A2_2
+GSM1358340,SMA-A2_3,disease,SMA_A2_3
